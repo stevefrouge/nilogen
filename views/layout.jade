@@ -2,9 +2,61 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css')
     script(src='https://code.jquery.com/jquery-2.2.3.min.js' type='text/javascript' integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=' crossorigin='anonymous')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' type='text/javascript')
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    .container
+        .row
+            .headerimages               
+              img(src='/images/Lines-1.png' class='line')
+              img(src='/images/Lines-2.png' class='line')
+               
+        .row.menurow
+            .col-md-4 
+                img(src='/images/logo.png' class='logoimg')
+                
+            .col-md-8
+                .divmenuwrap
+                    ul(class='ulmenu')
+                       li
+                           a() ABOUT
+                       li 
+                           a() SERVICES
+                       li 
+                           a() TECHNOLOGY
+                       li 
+                           a() NEWS
+                       li 
+                           a() WORK WITH US
+                       li 
+                           a() CONTACT
+                       li
+                           a() 
+                               i(class="fa fa-facebook" aria-hidden="true")
+                       li
+                           a() 
+                               i(class="fa fa-twitter" aria-hidden="true")
+                    img(src='/images/Lines-2.png' class='menuline')
+    
+    
     block content
+    .container-fluid.footer 
+        .container 
+            .row
+                .col-md-3 
+                    h2 SITEMAP
+                .col-md-3 
+                    h2 SOCIAL
+                .col-md-3 
+                    h2 SEARCH
+                .col-md-3 
+                    h2 col-md-4
+    script(src='https://use.typekit.net/ikz5qnl.js')
+    script.
+        try{Typekit.load({ async: true });}catch(e){}
+   
