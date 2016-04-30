@@ -172,10 +172,12 @@ h2{
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
         /*body{background-color: yellow;}*/
-         .ulmenu{position: relative;}
-             .imgdiv{background-position: 0px 0px;}
+          .ulmenu{position: relative;}
+          .imgdiv{background-position: 0px 0px;}
           .menuline{display: none;}
-          .line2{display: none;}
+       .line2{display: none;}
+       .line3{display: none;}
+       .leftline{display: none;}
     }
 
     /* Custom, iPhone Retina */ 
@@ -185,4 +187,7 @@ h2{
        .imgdiv{background-position: 0px 0px;}
        .menuline{display: none;}
        .line2{display: none;}
+       .line3{display: none;}
+       .leftline{display: none;}
+       
     }
