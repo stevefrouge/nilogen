@@ -173,12 +173,14 @@ h2{
     @media only screen and (max-width : 480px) {
         /*body{background-color: yellow;}*/
          .ulmenu{position: relative;}
-          .imgdiv{height: 350px;}
+             .imgdiv{background-position: 0px 0px;}
+          .menuline{display: none;}
     }
 
     /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
        /*body{background-color: blue;}*/
        .ulmenu{position: relative;}
-       .imgdiv{height: 350px;}
+       .imgdiv{background-position: 0px 0px;}
+       .menuline{display: none;}
     }
