@@ -175,6 +175,7 @@ h2{
          .ulmenu{position: relative;}
              .imgdiv{background-position: 0px 0px;}
           .menuline{display: none;}
+          .line2{display: none;}
     }
 
     /* Custom, iPhone Retina */ 
@@ -183,4 +184,5 @@ h2{
        .ulmenu{position: relative;}
        .imgdiv{background-position: 0px 0px;}
        .menuline{display: none;}
+       .line2{display: none;}
     }
