@@ -119,7 +119,7 @@ h2{
 }
 .imgdiv{
     height: 450px;
-    background: url(../images/glass.jpg) no-repeat center center fixed; 
+    background: url(../images/glass-min.jpg) no-repeat center center fixed; 
     background-position: 0px -250px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -154,3 +154,29 @@ h2{
 .boxcontent{
     font-size: 22px;
 }
+
+    @media only screen and (max-width : 1200px) {
+      /*body{background-color: purple;}*/
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        /*body{background-color: red;}*/
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        /*body{background-color: green;}*/
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+        /*body{background-color: yellow;}*/
+         .ulmenu{position: relative;}
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+       /*body{background-color: blue;}*/
+       .ulmenu{position: relative;}
+    }
