@@ -1,14 +1,14 @@
 var express = require('express');
 var app = express();
 
-var title = "Nilogen"
+var title = "Nilogen Oncosystems"
 var appRoot = require('app-root-path');
 var path = appRoot + "/views/";
 app.get('/', function(req, res, next) {
   res.render(path + 'index', { title: title });
 });
 app.get('/views/about', function(req, res){
-   res.render(path + 'about', { title: title });
+   res.render(path + 'about', { title: "About" });
 });
 /* GET home page. */
 app.get('/views/test', function(req, res, next) {
