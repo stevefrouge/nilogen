@@ -28,19 +28,20 @@ html
                
         .row.menurow
             .col-md-4 
-                img(src='/images/logo.png' class='logoimg')
+                a(href="/")
+                    img(src='/images/logo.png' class='logoimg')
                 
             .col-md-8
                 .divmenuwrap
                     ul(class='ulmenu')
                        li
-                           a(href="/test") ABOUT
+                           a(href="/about") ABOUT
                        li 
-                           a(href="/") SERVICES
+                           a(href="/test") SERVICES
                        li 
-                           a() TECHNOLOGY
+                           a(href="/tech") TECHNOLOGY
                        li 
-                           a() NEWS
+                           a(href="/news") NEWS
                        li 
                            a() WORK WITH US
                        li 
@@ -62,9 +63,9 @@ html
                     h2 SITEMAP
                     ul
                         li 
-                            a(href="google.com") Home
+                            a(href="/") Home
                         li 
-                            a(href="google.com") About Us
+                            a(href="/about") About Us
                         li 
                             a(href="google.com") Services
                         li

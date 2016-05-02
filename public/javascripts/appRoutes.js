@@ -13,8 +13,21 @@
         .when('/test', {
             templateUrl: 'views/test',
             controller: 'NerdController'
-        });
-
+        })
+       
+       .when('/about', {
+            templateUrl: 'views/about'
+           
+        })
+       .when('/tech', {
+            templateUrl: 'views/tech'
+           
+        })
+       .when('/news', {
+            templateUrl: 'views/news'
+           
+        })
+       
     $locationProvider.html5Mode(true);
 
 }]);
