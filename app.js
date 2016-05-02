@@ -9,7 +9,7 @@ var bodyParser = require('body-parser');
 //var users = require('./routes/users');
 //var test = require('./routes/test');
 //var landing = require('./routes/landing');
-var routes = require('./routes/routes')
+//var routes = require('./routes/routes')
 
 var app = express();
 
@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(routes);
+//app.use(routes);
 //app.use('/', routes);
 //app.use('/users', users);
 //app.use('/views/landing', landing);
@@ -32,6 +32,32 @@ app.use(routes);
 //app.get('/views/about', function(req, res){
 //   res.render('about', { title: 'Express' });
 //});
+
+var title = "Nilogen"
+app.get('/', function(req, res, next) {
+  res.render('index', { title: title });
+});
+app.get('/views/about', function(req, res){
+   res.render('about', { title: title });
+});
+/* GET home page. */
+app.get('/views/test', function(req, res, next) {
+  res.render('test', { title: title });
+});
+/* GET home page. */
+app.get('/views/landing', function(req, res, next) {
+  res.render('landing', { title: title });
+});
+app.get('/views/tech', function(req, res, next) {
+  res.render('tech', { title: title });
+});
+app.get('/views/news', function(req, res, next) {
+  res.render('news', { title: title });
+});
+
+
+
+
 
 
 // catch 404 and forward to error handler
