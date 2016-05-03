@@ -99,7 +99,7 @@ h2{
 .ulmenu li a:hover{
    color: #00B0EF;
    cursor: pointer;
-  font-weight: bold;
+
 }
 .divmenuwrap{
     position: relative;
@@ -123,15 +123,19 @@ h2{
    list-style: none;
    margin:0;
   padding: 0;
+  margin-top: 20px;
    
 }
 .footer input{
-  width: 250px;
+  width: 300px;
   color: black;
+   margin-top: 20px;
 }
 .footer ul li a{
     color: white;
-    font-size: 20px;
+    font-size: 18px;
+    text-decoration: underline;
+    font-weight: light;
     
 }
 
@@ -140,6 +144,19 @@ h2{
 
     
 }
+ .footericon{
+     float:left;
+     width: 30px;
+ }
+ .footerlinktext{
+     float: right;                  
+ }
+ .copyright{
+    border-top: 1px solid white;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 40px;
+ }
 .imgdiv{
     height: 450px;
     background: url(../images/glass-min.jpg) no-repeat center center fixed; 
@@ -158,6 +175,10 @@ h2{
     font-family: "futura-pt",sans-serif;
     margin-right: 10px;
 }
+.btn:hover{
+    color: white;
+    background-color: #005088;    
+}
 .boxoutercontent{
     padding-top: 30px;
     padding-bottom: 30px;
@@ -166,14 +187,15 @@ h2{
 .quotebox{
     font-family: "futura-pt",sans-serif;
     color: #00B0EF;
-    border: 1px solid #00B0EF;
+    border: 2px solid #00B0EF;
     padding: 30px;
     margin-top: 100px;
     font-size: 36px;
-    font-weight: bold;
+    font-weight: normal;
     text-align: center;
     
 }
+
 .boxcontent{
     font-size: 22px;
 }
