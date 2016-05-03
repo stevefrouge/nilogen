@@ -177,7 +177,42 @@ h2{
 .boxcontent{
     font-size: 22px;
 }
-
+.mobileMenu{
+    text-align: right;
+    display: none;
+    float: right;
+    padding-top: 10px;
+  
+ }
+ .mobileMenu a{
+     font-size: 38px;
+     color: #002751;
+ }
+ .mobileList{
+      list-style: none;
+      margin:0;
+      padding: 15px;;
+      text-align: left; 
+    
+      background-color: White;
+ }
+ .mobileDropMenu{
+     width: 100%;
+     position: absolute;
+     z-index: 2000;
+     border-bottom: 1px solid gray;
+     margin-top: -30px;
+ }
+ .menumobilerow{
+    margin: 0;
+    padding: 0px;
+    background-color: White;
+    display: none;
+ }
+ .mobileList a{
+     font-size: 23px;
+     
+ }
     @media only screen and (max-width : 1200px) {
       /*body{background-color: purple;}*/
     }
@@ -201,6 +236,24 @@ h2{
        .line2{display: none;}
        .line3{display: none;}
        .leftline{display: none;}
+       .divmenuwrap{
+           display: none;
+           
+            position: absolute;
+       }
+       .divmenuwrap{
+           height: 28px;
+       }
+       .logoimg{
+           width: 200px;
+       }
+       .mobileMenu{
+           
+             display: block;
+        }
+         .divLogo{
+            float: left;
+        }
     }
 
     /* Custom, iPhone Retina */ 
@@ -212,5 +265,21 @@ h2{
        .line2{display: none;}
        .line3{display: none;}
        .leftline{display: none;}
-       
+       .divmenuwrap{
+           display: none;
+         
+       }
+       .divmenuwrap{
+           height: 28px;
+       }
+       .logoimg{
+           width: 200px;
+       }
+       .mobileMenu{
+           
+             display: block;
+        }
+        .divLogo{
+            float: left;
+        }
     }
