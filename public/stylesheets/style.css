@@ -127,9 +127,9 @@ h2{
    
 }
 .footer input{
-  width: 300px;
+ /* width: 100%;
   color: black;
-   margin-top: 20px;
+   margin-top: 20px;*/
 }
 .footer ul li a{
     color: white;
@@ -138,12 +138,16 @@ h2{
     font-weight: light;
     
 }
-
-.footer ul li a:hover{
-    color: #00B0EF;
-
-    
+.footer .form-group{
+        width: 100%;
 }
+.footer .input-group{
+    width:100%;
+}
+.footer ul li a:hover{
+    color: #00B0EF;   
+}
+
  .footericon{
      float:left;
      width: 30px;

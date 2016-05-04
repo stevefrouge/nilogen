@@ -126,8 +126,15 @@ html
                                 .footericon
                                     i(class="fa fa-google-plus" aria-hidden="true")
                 .col-md-3 
-                    h2 SEARCH
-                    input(type="text")
+                    h2 SEARCH                  
+                    form.form-inline
+                        .form-group
+                            label.sr-only(for='exampleInputAmount') Amount (in dollars)
+                            .input-group                              
+                                input#exampleInputAmount.form-control(type='text', placeholder='Search')
+                                .input-group-addon
+                                    i(class="fa fa-search" aria-hidden="true")
+                        
                 .col-md-3 
                     h2 &nbsp;
                     ul
