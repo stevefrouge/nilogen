@@ -5,19 +5,19 @@ var title = "Nilogen Oncosystems"
 var appRoot = require('app-root-path');
 var path = appRoot + "/views/";
 app.get('/', function(req, res, next) {
-  res.render('index', { title: title });
+  res.render(path + 'index', { title: title });
 });
 app.get('/about', function(req, res){
-   res.render('about', { title: "About" });
+   res.render(path + 'about', { title: "About" });
 });
 app.get('/tech', function(req, res, next) {
-  res.render('tech', { title: title });
+  res.render(path + 'tech', { title: title });
 });
 app.get('/news', function(req, res, next) {
-  res.render('news', { title: title });
+  res.render(path + 'news', { title: title });
 });
 app.get('/services', function(req, res, next) {
-  res.render('services', { title: title });
+  res.render(path + 'services', { title: title });
 });
 /*app.get('/views/about', function(req, res){
    res.render(path + 'about', { title: "About" });
