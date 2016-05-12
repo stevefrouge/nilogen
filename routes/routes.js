@@ -19,6 +19,9 @@ app.get('/news', function(req, res, next) {
 app.get('/services', function(req, res, next) {
   res.render(path + 'services', { title: title });
 });
+app.get('/team', function(req, res, next) {
+  res.render(path + 'team', { title: title });
+});
 /*app.get('/views/about', function(req, res){
    res.render(path + 'about', { title: "About" });
 });

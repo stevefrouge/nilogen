@@ -45,7 +45,12 @@ h2{
     display:block;
   /*  margin:auto;*/
 }
-
+.bio{
+        margin-bottom: 35px;
+}
+.check{
+    font-size: 26px;
+}
 .line{
     
     max-width: 150px;
@@ -158,7 +163,9 @@ h2{
 .footer ul li a:hover{
     color: #00B0EF;   
 }
-
+.fullpage{
+    width: 95%;
+}
  .footericon{
      float:left;
      width: 30px;
@@ -172,10 +179,39 @@ h2{
     margin-top: 40px;
     padding-top: 40px;
  }
+ 
+ .dashwrap{
+     width: 100%;
+    
+    margin: auto;
+     
+ }
+ .dash{
+    width: 15px;
+    
+    float: left; 
+ }
+ .smallcheck{
+    margin-left: 15px;
+ 
+  
+ }
+.homeimg{
+    background: url(../images/glass-min.jpg) no-repeat center center;
+      background-position: 0px -250px;
+}
+.techimg{
+    background: url(../images/TechnologyHeader.jpg) no-repeat center center;
+    background-position: 0px 0px;
+}
+.aboutimg{
+    background: url(../images/AboutHeader.jpg) no-repeat center center;
+    background-position: 0px -150px;
+}
 .imgdiv{
     height: 450px;
-    background: url(../images/glass-min.jpg) no-repeat center center; 
-    background-position: 0px -250px;
+     
+  
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -262,11 +298,27 @@ h2{
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
         /*body{background-color: green;}*/
-    }
+        .ulmenu li a {
+            font-size: 18px;
+            
+        }
+        .imgdiv {
+            height: 200px;
+        }
+        .divmenuwrap {
+            height: 50px;
+        }
+        .menuline{
+            display: none;
+        }
+     }
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
         /*body{background-color: yellow;}*/
+          h1{
+            font-size: 42px;
+        }
           .ulmenu{position: relative;}
           .imgdiv{background-position: 0px 0px;}
           .menuline{display: none;}
