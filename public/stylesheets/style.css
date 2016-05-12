@@ -174,7 +174,7 @@ h2{
  }
 .imgdiv{
     height: 450px;
-    background: url(../images/glass-min.jpg) no-repeat center center fixed; 
+    background: url(../images/glass-min.jpg) no-repeat center center; 
     background-position: 0px -250px;
   -webkit-background-size: cover;
   -moz-background-size: cover;

@@ -7,14 +7,24 @@ var path = appRoot + "/views/";
 app.get('/', function(req, res, next) {
   res.render(path + 'index', { title: title });
 });
-app.get('/views/about', function(req, res){
+app.get('/about', function(req, res){
    res.render(path + 'about', { title: "About" });
 });
-/* GET home page. */
+app.get('/tech', function(req, res, next) {
+  res.render(path + 'tech', { title: title });
+});
+app.get('/news', function(req, res, next) {
+  res.render(path + 'news', { title: title });
+});
+app.get('/services', function(req, res, next) {
+  res.render(path + 'services', { title: title });
+});
+/*app.get('/views/about', function(req, res){
+   res.render(path + 'about', { title: "About" });
+});
 app.get('/views/test', function(req, res, next) {
   res.render(path + 'test', { title: title });
 });
-/* GET home page. */
 app.get('/views/landing', function(req, res, next) {
   res.render(path + 'landing', { title: title });
 });
@@ -23,7 +33,10 @@ app.get('/views/tech', function(req, res, next) {
 });
 app.get('/views/news', function(req, res, next) {
   res.render(path + 'news', { title: title });
-});
+});*/
+
+
+
 
 
 
