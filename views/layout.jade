@@ -35,7 +35,7 @@ html
                         img(src='/images/logo300.png' class='logoimg')
                 .mobileMenu
                         a(href="" ng-click="doMenu()")
-                           i(class="fa fa-bars" aria-hiiden="true")
+                           i(id="mobilebutton" class="fa fa-bars" aria-hiiden="true")
                       
                         
             .col-md-8
@@ -52,7 +52,7 @@ html
                        li 
                            a(href="/news") NEWS                     
                        li 
-                           a() CONTACT
+                           a(href="/contact") CONTACT
                        li
                            a() 
                                i(class="fa fa-facebook" aria-hidden="true")
@@ -68,19 +68,17 @@ html
                                  li 
                                     a(href="/test" ng-click="menuClicked()") ABOUT                                                                                           
                                 li 
-                                    a(href="/test" ng-click="menuClicked()") TEAM  
-                                li                                                           
-                                    a(href="/services" ng-click="menuClicked()") SERVICES
+                                    a(href="/test" ng-click="menuClicked()") MEET THE TEAM                                
                                 li 
                                     a(href="/tech" ng-click="menuClicked()") TECHNOLOGY
-                                li 
-                                    a(href="/test" ng-click="menuClicked()") SERVICES
+                                li                                                           
+                                    a(href="/services" ng-click="menuClicked()") SERVICES                                
                                 li 
                                     a(href="/news" ng-click="menuClicked()") NEWS                                
                                 li 
                                     a() WORK WITH US
                                 li 
-                                    a() CONTACT
+                                    a(href="/contact" ng-click="menuClicked()") CONTACT
                                 li
                                     a() 
                                         i(class="fa fa-facebook" aria-hidden="true")

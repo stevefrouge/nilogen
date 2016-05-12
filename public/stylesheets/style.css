@@ -179,7 +179,9 @@ h2{
     margin-top: 40px;
     padding-top: 40px;
  }
- 
+ #mobilebutton{
+     font-size: 32px;
+ }
  .dashwrap{
      width: 100%;
     
@@ -201,11 +203,11 @@ h2{
       background-position: 0px -250px;
 }
 .techimg{
-    background: url(../images/TechnologyHeader.jpg) no-repeat center center;
+    background: url(../images/TechnologyHeaderComp.jpg) no-repeat center center;
     background-position: 0px 0px;
 }
 .aboutimg{
-    background: url(../images/AboutHeader.jpg) no-repeat center center;
+    background: url(../images/AboutHeaderComp.jpg) no-repeat center center;
     background-position: 0px -150px;
 }
 .imgdiv{
@@ -293,6 +295,9 @@ h2{
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
         /*body{background-color: red;}*/
+        .imgdiv{
+            height: 200px;
+        }
     }
 
     /* Small Devices, Tablets */
@@ -335,6 +340,13 @@ h2{
        }
        .logoimg{
            width: 200px;
+           
+       }
+       .imgdiv{
+            display: none;
+       }
+       .boxoutercontent{
+           padding-top: 0px;
        }
        .mobileMenu{
            
@@ -358,11 +370,18 @@ h2{
            display: none;
          
        }
+       .imgdiv{
+            display: none;
+       }
+       .boxoutercontent{
+           padding-top: 0px;
+       }
        .divmenuwrap{
            height: 28px;
        }
        .logoimg{
            width: 200px;
+          
        }
        .mobileMenu{
            

@@ -10,17 +10,20 @@ app.get('/', function(req, res, next) {
 app.get('/about', function(req, res){
    res.render(path + 'about', { title: "About" });
 });
+app.get('/contact', function(req, res){
+   res.render(path + 'contact', { title: "Contact" });
+});
 app.get('/tech', function(req, res, next) {
-  res.render(path + 'tech', { title: title });
+  res.render(path + 'tech', { title: "Technology" });
 });
 app.get('/news', function(req, res, next) {
-  res.render(path + 'news', { title: title });
+  res.render(path + 'news', { title: "News" });
 });
 app.get('/services', function(req, res, next) {
-  res.render(path + 'services', { title: title });
+  res.render(path + 'services', { title: "Services" });
 });
 app.get('/team', function(req, res, next) {
-  res.render(path + 'team', { title: title });
+  res.render(path + 'team', { title: "Team" });
 });
 /*app.get('/views/about', function(req, res){
    res.render(path + 'about', { title: "About" });
