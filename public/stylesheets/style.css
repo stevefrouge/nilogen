@@ -19,6 +19,16 @@ h2{
      font-size: 38px;
     
 }
+.subheader{
+   color: #005088;
+   font-size: 26px;
+}
+.techwrap{
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
  a:hover { text-decoration: none; }
 
 .darkblue{
@@ -82,6 +92,7 @@ h2{
     overflow: hidden;
     position: absolute;
     bottom: 2px;
+    margin-left: 30px;
 }
 
 .ulmenu li {
@@ -90,7 +101,7 @@ h2{
     
 }
 .ulmenu li a{
-   font-size: 22px;
+   font-size: 20px;
    color: #002751;
    font-family: "futura-pt",sans-serif;
   
