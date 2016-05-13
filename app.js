@@ -5,6 +5,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var favicon = require('serve-favicon');
+
+//var ContactDao = require('./models/contactDao');
+var Contact = require('./routes/contact');
 //var appRoot = require('app-root-path');
 
 //var routes = require('./routes/index');
@@ -28,6 +31,15 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(favicon(path.join(__dirname,'public','images','favicon.ico')));
 app.use(routes);
+
+app.post('/view1', function(req, res) {
+    console.log(req.body.desc);
+    res.end();
+});
+
+//var contactDao = new ContactDao();
+//var contact = new Contact(contactDao);
+//app.post('/contact', contact.contact.bind(contact));
 //app.use('/', routes);
 //app.use('/users', users);
 //app.use('/views/landing', landing);

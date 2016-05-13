@@ -1,9 +1,12 @@
 var express = require('express');
 var app = express();
-
 var title = "Nilogen Oncosystems"
 var appRoot = require('app-root-path');
 var path = appRoot + "/views/";
+
+var Contact = require(appRoot + "/routes/contact.js");
+var contact = new Contact();
+
 app.get('/', function(req, res, next) {
   res.render(path + 'index', { title: title });
 });
@@ -24,6 +27,12 @@ app.get('/services', function(req, res, next) {
 });
 app.get('/team', function(req, res, next) {
   res.render(path + 'team', { title: "Team" });
+});
+app.post('/contact',function(req, res, next){
+    var x = contact;
+    contact.recievecontactform(req,res);
+    var d = req.body;
+  
 });
 /*app.get('/views/about', function(req, res){
    res.render(path + 'about', { title: "About" });

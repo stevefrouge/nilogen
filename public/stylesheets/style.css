@@ -45,6 +45,9 @@ h2{
     display:block;
   /*  margin:auto;*/
 }
+.topmargin{
+    margin-top: 30px;
+}
 .bio{
         margin-bottom: 35px;
 }
@@ -55,6 +58,14 @@ h2{
     
     max-width: 150px;
     margin-top: -75px;
+}
+.form-horizontal .form-group {
+    margin-right: 0px; 
+    margin-left: 0px; 
+}
+.control-label{
+    float: left;
+    font-weight: normal;
 }
 .line2{
     
