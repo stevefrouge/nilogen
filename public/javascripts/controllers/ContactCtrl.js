@@ -23,12 +23,11 @@ angular.module('ContactCtrl', []).controller('ContactController', function($scop
         var isValid =  $scope.validate();
         
         if(isValid){
-              $http.post('/contact',data)
-                     success(function(data) {
-                     console.log("posted successfully");
-                  }).error(function(data) {
-                 console.error("error in posting");
-        })   
+             $http.post('/contact', data).success(function(data) {
+                        console.log("posted successfully");
+        }).error(function(data) {
+            console.error("error in posting");
+        })
         };
         
       
