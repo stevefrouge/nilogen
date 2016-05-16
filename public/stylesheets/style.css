@@ -238,6 +238,7 @@ h2{
     border-radius: 0px;
     font-family: "futura-pt",sans-serif;
     margin-right: 10px;
+    margin-top: 3px;
 }
 .btn:hover{
     color: white;
@@ -277,27 +278,36 @@ h2{
  .mobileList{
       list-style: none;
       margin:0;
-      padding: 15px;;
+      padding: 0px;;
       text-align: left; 
-    
-      background-color: White;
+     
+      background-color: #002751;
  }
+  .mobileList li{
+       border-bottom: 1px solid White;
+       
+     
+  }
  .mobileDropMenu{
      width: 100%;
      position: absolute;
      z-index: 2000;
-     border-bottom: 1px solid gray;
-     margin-top: -30px;
+     /*border-bottom: 1px solid gray;*/
+    
+     margin-top: 10px;
  }
  .menumobilerow{
     margin: 0;
     padding: 0px;
-    background-color: White;
+    background-color: #002751;;
     display: none;
  }
  .mobileList a{
      font-size: 23px;
-     
+     color: White;
+     display:inline-block;
+     width: 100%;
+     padding: 10px;
  }
     @media only screen and (max-width : 1200px) {
       /*body{background-color: purple;}*/
@@ -366,11 +376,15 @@ h2{
          .divLogo{
             float: left;
         }
+        .menurow{
+            padding-bottom: 0px;
+        }
     }
 
     /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
        /*body{background-color: blue;}*/
+       
        .ulmenu{position: relative;}
        .imgdiv{background-position: 0px 0px;}
        .menuline{display: none;}
@@ -400,5 +414,8 @@ h2{
         }
         .divLogo{
             float: left;
+        }
+        .menurow{
+            padding-bottom: 0px;
         }
     }

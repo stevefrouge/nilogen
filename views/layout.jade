@@ -66,18 +66,16 @@ html
                             ul(class="mobileList")
                                 li
                                     a(href="/" ng-click="menuClicked()") HOME
-                                 li 
-                                    a(href="/test" ng-click="menuClicked()") ABOUT                                                                                           
                                 li 
-                                    a(href="/test" ng-click="menuClicked()") MEET THE TEAM                                
+                                    a(href="/about" ng-click="menuClicked()") ABOUT                                                                                           
+                                li 
+                                    a(href="/team" ng-click="menuClicked()") MEET THE TEAM                                
                                 li 
                                     a(href="/tech" ng-click="menuClicked()") TECHNOLOGY
                                 li                                                           
                                     a(href="/services" ng-click="menuClicked()") SERVICES                                
                                 li 
-                                    a(href="/news" ng-click="menuClicked()") NEWS                                
-                                li 
-                                    a() WORK WITH US
+                                    a(href="/news" ng-click="menuClicked()") NEWS                                                             
                                 li 
                                     a(href="/contact" ng-click="menuClicked()") CONTACT
                                 li
@@ -99,13 +97,13 @@ html
                         li 
                             a(href="/about" ng-click="menuClicked()") About Us
                         li 
-                            a(href="/services" ng-click="menuClicked()") Services
+                            a(href="/team" ng-click="menuClicked()") Team
                         li
                             a(href="/tech" ng-click="menuClicked()") Technology
                         li 
-                            a(href="/news" ng-click="menuClicked()") News
+                            a(href="/services" ng-click="menuClicked()") Services                     
                         li 
-                            a(href="/work" ng-click="menuClicked()") Work With Us
+                            a(href="/news" ng-click="menuClicked()") News
                         li 
                             a(href="/contact" ng-click="menuClicked()") Contact Us
                 .col-md-3 
@@ -124,10 +122,7 @@ html
                             a(href="google.com") LinkedIn
                                 .footericon
                                     i(class="fa fa-linkedin" aria-hidden="true")
-                        li 
-                            a(href="google.com") Google+
-                                .footericon
-                                    i(class="fa fa-google-plus" aria-hidden="true")
+                       
                 .col-md-3 
                     h2 SEARCH                  
                     form.form-inline
