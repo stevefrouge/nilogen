@@ -18,7 +18,7 @@ html
     script(src="javascripts/controllers/ContactCtrl.js" type='text/javascript')
     script(src='javascripts/appRoutes.js' type='text/javascript')
     script(src='javascripts/app.js' type='text/javascript')
-    
+    meta(name='description' content='Nilogen Oncosystems is dedicated to streamlining and improving cancer drug development using its revolutionary 3D ex vivo, ex vivo and in vivo drug testing platforms that use real patient tumor tissue and expertise to best assess the therapeutic potential of drug treatments and immunotherapies. Nilogen reduces the cost and risk of clinical trials with its groundbreaking 3D ex vivo platform.')
     
     meta(name="viewport" content="width=device-width, initial-scale=1")
     link(rel='stylesheet', href='/stylesheets/style.css')
@@ -129,8 +129,8 @@ html
                         .form-group
                             label.sr-only(for='exampleInputAmount') Amount (in dollars)
                             .input-group                              
-                                input#exampleInputAmount.form-control(type='text', placeholder='Search')
-                                .input-group-addon
+                                input#exampleInputAmount.form-control(type='text', placeholder='Search' ng-model='search')
+                                .input-group-addon(ng-click="doSearch()")
                                     i(class="fa fa-search" aria-hidden="true")
                         
                 .col-md-3 

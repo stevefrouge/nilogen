@@ -217,9 +217,13 @@ h2{
     background: url(../images/TechnologyHeaderComp.jpg) no-repeat center center;
     background-position: 0px 0px;
 }
+.servicesimg{
+    background: url(../images/SevicesHeaderComp.jpg) no-repeat center center;
+   /* background-position: 0px -250px;*/
+}
 .aboutimg{
     background: url(../images/AboutHeaderComp.jpg) no-repeat center center;
-    background-position: 0px -150px;
+    background-position: 0px -100px;
 }
 .imgdiv{
     height: 450px;
@@ -293,14 +297,14 @@ h2{
      position: absolute;
      z-index: 2000;
      /*border-bottom: 1px solid gray;*/
-    
+    display: none;
      margin-top: 10px;
  }
  .menumobilerow{
     margin: 0;
     padding: 0px;
     background-color: #002751;;
-    display: none;
+    
  }
  .mobileList a{
      font-size: 23px;
