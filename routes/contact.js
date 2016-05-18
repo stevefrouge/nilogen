@@ -55,6 +55,14 @@ Contact.prototype = {
     recievecontactform: function (req, res) {       
         var self = this;
         var item = req.body;  
+        var phone = '';
+        if(item.phone != null){
+            phone = item.phone;
+        }
+        var comments = '';
+        if(item.comments != null){
+            comments = item.comments;
+        }
         var body = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">';       
         body += '<html xmlns="http://www.w3.org/1999/xhtml">'; 
         body += '<head>';
@@ -72,10 +80,10 @@ Contact.prototype = {
         body += '<td>Email</td>' + '<td>' + item.email +'</td>';
         body += '</tr>';
         body += '<tr>';
-        body += '<td>Phone</td>' + '<td>' + item.phone +'</td>';
+        body += '<td>Phone</td>' + '<td>' + phone +'</td>';
         body += '</tr>';
         body += '<tr>';
-        body += '<td>Comments</td>' + '<td>' + item.comments +'</td>';
+        body += '<td>Comments</td>' + '<td>' + comments +'</td>';
         body += '</tr>';
         body += '</table>';
         body += '</body>';
