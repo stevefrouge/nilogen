@@ -10,7 +10,7 @@ angular.module('ContactCtrl', []).controller('ContactController', function($scop
     $scope.contactform.comments = null;
     $scope.nameinvalid = false;
     $scope.emailinvalid = false;
-    
+    $scope.disabledsubmit = false;
     //$scope.alpha = true;
     //var goodForm = "has-error";
     //var badForm = "form-group.has-error"
@@ -21,10 +21,13 @@ angular.module('ContactCtrl', []).controller('ContactController', function($scop
         var data = angular.toJson($scope.contactform, true);       
         
         var isValid =  $scope.validate();
-        
+        $scope.disabledsubmit = true;
         if(isValid){
              $http.post('/contact', data).success(function(data) {
                         console.log("posted successfully");
+                        $('#myModal').modal('toggle');
+                        $scope.resetFields();
+                        $scope.disabledsubmit = false;
         }).error(function(data) {
             console.error("error in posting");
         })
@@ -32,6 +35,12 @@ angular.module('ContactCtrl', []).controller('ContactController', function($scop
         
       
         
+    }
+    $scope.resetFields =function (){
+          $scope.contactform.name = null;
+          $scope.contactform.email = null;
+          $scope.contactform.phone = null;
+          $scope.contactform.comments = null;
     }
     $scope.validate = function(){
         

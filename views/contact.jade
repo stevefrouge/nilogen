@@ -41,7 +41,20 @@ block content
                      .form-group(style="margin-left: 15px;")
                                 label.control-label(for='inputPassword3') Your Comments
                                 .col-sm-10
-                                textarea#inputComments.form-control(type='text', placeholder='Name' rows='6' ng-model='comments')         
+                                textarea#inputComments.form-control(type='text', placeholder='Name' rows='6' ng-model='contactform.comments')         
                      .form-group(style="margin-left: 15px;")
                                 .col-sm-offset-2.col-sm-10
-                                button.btn.btn-default(type='submit' ng-click="contactClicked()") SUBMIT
+                                button.btn.btn-default(type='submit' ng-click="contactClicked()" ng-disabled="disabledsubmit") SUBMIT
+     #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+        .modal-dialog(role='document')
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                    h4#myModalLabel.modal-title Confirm
+                .modal-body
+                    | Your Comments have been sent to Nilogen.
+                .modal-footer
+                    button.btn.btn-default(type='button', data-dismiss='modal') Close                                                      
+    
+        
