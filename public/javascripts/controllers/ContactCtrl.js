@@ -11,11 +11,7 @@ angular.module('ContactCtrl', []).controller('ContactController', function($scop
     $scope.nameinvalid = false;
     $scope.emailinvalid = false;
     $scope.disabledsubmit = false;
-    //$scope.alpha = true;
-    //var goodForm = "has-error";
-    //var badForm = "form-group.has-error"
     
-    //$nameValid = goodForm;
     
     $scope.contactClicked = function(){
         var data = angular.toJson($scope.contactform, true);       
