@@ -42,6 +42,9 @@ block content
                                 label.control-label(for='inputPassword3') Your Comments
                                 .col-sm-10
                                 textarea#inputComments.form-control(type='text', placeholder='Name' rows='6' ng-model='contactform.comments')         
+                                
+                     .form-group(style="margin-left: 15px;")                              
+                                div(vc-recaptcha theme="'light'" key="model.key" on-create="setWidgetId(widgetId)" on-success="setResponse(response)" on-expire="cbExpiration()")
                      .form-group(style="margin-left: 15px;")
                                 .col-sm-offset-2.col-sm-10
                                 button.btn.btn-default(type='submit' ng-click="contactClicked()" ng-disabled="disabledsubmit") SUBMIT

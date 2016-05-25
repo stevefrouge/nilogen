@@ -1,5 +1,28 @@
-angular.module('ContactCtrl', []).controller('ContactController', function($scope, $http) {
-
+angular.module('ContactCtrl', ['vcRecaptcha']).controller('ContactController', function(vcRecaptchaService, $scope, $http) {
+    
+    
+     $scope.response = null;
+     $scope.widgetId = null;
+     $scope.model = {
+                    key: '6Ley4yATAAAAAGJxuFAoltN-AIQQQhPgukh1CcxZ'
+                };
+    
+     $scope.setResponse = function (response) {
+                    console.info('Response available');
+                    $scope.response = response;
+                    $scope.disabledsubmit = false;
+     };
+     $scope.setWidgetId = function (widgetId) {
+                    console.info('Created widget ID: %s', widgetId);
+                    $scope.widgetId = widgetId;
+     };
+     $scope.cbExpiration = function() {
+                    console.info('Captcha expired. Resetting response object');
+                    vcRecaptchaService.reload($scope.widgetId);
+                    $scope.response = null;
+                    $scope.disabledsubmit = true;
+     };
+    
     $scope.tagline = 'Nothing beats a pocket protector!';
 
     $scope.contactform = new Object;
@@ -10,12 +33,32 @@ angular.module('ContactCtrl', []).controller('ContactController', function($scop
     $scope.contactform.comments = null;
     $scope.nameinvalid = false;
     $scope.emailinvalid = false;
-    $scope.disabledsubmit = false;
+    $scope.disabledsubmit = true;
     
     
     $scope.contactClicked = function(){
-        var data = angular.toJson($scope.contactform, true);       
+         
+        // var valid;
+       // console.log('sending the captcha response to the server', $scope.response);
         
+        // if($scope.response == null){
+       //      valid = false;
+             
+       //  }else{
+       //      valid = true;
+       //  }
+        
+        
+        // if (valid) {
+         //               console.log('Success');
+        // } else {
+        //   console.log('Failed validation');
+                        // In case of a failed validation you need to reload the captcha
+                        // because each response can be checked just once
+              
+       // }
+                    
+        var data = angular.toJson($scope.contactform, true);               
         var isValid =  $scope.validate();
         $scope.disabledsubmit = true;
         if(isValid){
@@ -27,16 +70,22 @@ angular.module('ContactCtrl', []).controller('ContactController', function($scop
         }).error(function(data) {
             console.error("error in posting");
         })
+        
+        }else{
+              $scope.response =null;
+              vcRecaptchaService.reload($scope.widgetId);
+              $scope.disabledsubmit = true;
         };
-        
-      
-        
+           
     }
     $scope.resetFields =function (){
           $scope.contactform.name = null;
           $scope.contactform.email = null;
           $scope.contactform.phone = null;
           $scope.contactform.comments = null;
+          $scope.response =null;
+          vcRecaptchaService.reload($scope.widgetId);
+          $scope.disabledsubmit = true;
     }
     $scope.validate = function(){
         
