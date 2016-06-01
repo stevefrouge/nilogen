@@ -58,8 +58,15 @@ h2{
 .topimgmargin{
     margin-top: 20px;
 }
+.nomargin{
+   margin-right: 0px;
+    margin-left: 0px; 
+}
+.biorow{
+    margin-bottom: 30px;
+}
 .bio{
-        margin-bottom: 35px;
+      
 }
 .check{
     font-size: 26px;
@@ -365,6 +372,9 @@ h2{
         .menuline{
             display: none;
         }
+        .bio{
+            margin-top: 20px;
+        }
      }
 
     /* Extra Small Devices, Phones */ 
@@ -407,6 +417,12 @@ h2{
         .menurow{
             padding-bottom: 0px;
         }
+        .biorow{
+            margin-left: 0px;
+        }
+        .bio{
+            margin-top: 20px;
+        }
     }
 
     /* Custom, iPhone Retina */ 
@@ -445,5 +461,11 @@ h2{
         }
         .menurow{
             padding-bottom: 0px;
+        }
+        .biorow{
+            margin-left: 0px;
+        }
+        .bio{
+            margin-top: 20px;
         }
     }
