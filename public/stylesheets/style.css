@@ -226,17 +226,25 @@ h2{
       background-position: 0px -250px;
 }
 .techimg{
-    background: url(../images/TechnologyHeaderComp.jpg) no-repeat center center;
+    background: url(../images/Technology-min.jpg) no-repeat center center;
+    background-position: 0px 0px;
+}
+.newsimg{
+    background: url(../images/News-min.jpg) no-repeat center center;
+    background-position: 0px 0px;
+}
+.teamimg{
+    background: url(../images/MeettheTeam-min.jpg) no-repeat center center;
     background-position: 0px 0px;
 }
 .servicesimg{
    /* background: url(../images/SevicesHeaderComp.jpg) no-repeat center center;*/
    /* background-position: 0px -250px;*/
-   background: url(../images/SevicesHeader2-compressed.jpg) no-repeat center center;
+   background: url(../images/Services-min.jpg) no-repeat center center;
 }
 .aboutimg{
     /*background: url(../images/AboutHeaderComp.jpg) no-repeat center center;*/
-    background: url(../images/AboutHeader2-compressed.jpg) no-repeat center center;;
+    background: url(../images/About-min.jpg) no-repeat center center;;
     
     background-position: 0px -100px;
 }
