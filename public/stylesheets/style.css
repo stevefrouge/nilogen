@@ -4,11 +4,15 @@ body {
    font-family: "proxima-nova",sans-serif;
    font-size: 16px;
 }
+
+
 @media (min-width: 1200px){
 .container{
     width: 1300px;
       }
 }
+
+
 h1{
      font-family: "futura-pt",sans-serif;
      font-size: 50px;
@@ -29,6 +33,9 @@ h2{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.marginzero{
+    margin: 0px;
+}
  a:hover { text-decoration: none; }
 
 .darkblue{
@@ -47,6 +54,9 @@ h2{
 }
 .topmargin{
     margin-top: 30px;
+}
+.topimgmargin{
+    margin-top: 20px;
 }
 .bio{
         margin-bottom: 35px;
@@ -207,7 +217,9 @@ h2{
  .smallcheck{
     margin-left: 15px;
  
-  
+ }
+ .maxwidth{
+     max-width: 100%;
  }
 .homeimg{
     background: url(../images/glass-min.jpg) no-repeat center center;
@@ -218,11 +230,14 @@ h2{
     background-position: 0px 0px;
 }
 .servicesimg{
-    background: url(../images/SevicesHeaderComp.jpg) no-repeat center center;
+   /* background: url(../images/SevicesHeaderComp.jpg) no-repeat center center;*/
    /* background-position: 0px -250px;*/
+   background: url(../images/SevicesHeader2-compressed.jpg) no-repeat center center;
 }
 .aboutimg{
-    background: url(../images/AboutHeaderComp.jpg) no-repeat center center;
+    /*background: url(../images/AboutHeaderComp.jpg) no-repeat center center;*/
+    background: url(../images/AboutHeader2-compressed.jpg) no-repeat center center;;
+    
     background-position: 0px -100px;
 }
 .imgdiv{
