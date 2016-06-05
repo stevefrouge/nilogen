@@ -229,9 +229,21 @@ h2{
  .maxwidth{
      max-width: 100%;
  }
+ .homelayover{
+     max-width: 50%;
+     margin-left: 100px;
+     overflow: hidden;
+ }
+ .techimages{
+     width: 100%;
+ }
 .homeimg{
+    background: url(../images/Home-Image.jpg) no-repeat center center;
+      background-position: 0px 0px;
+}
+.faqimg{
     background: url(../images/glass-min.jpg) no-repeat center center;
-      background-position: 0px -250px;
+    background-position: 0px -250px;
 }
 .techimg{
     background: url(../images/Technology-min.jpg) no-repeat center center;
