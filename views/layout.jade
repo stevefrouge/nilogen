@@ -7,17 +7,17 @@ html
     link(rel='icon' href='/images/favicon.ico' type='image/x-icon')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css')
     link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css')
-    link(rel='stylesheet', href='libs/animate.css/animate.min.css')
+    //link(rel='stylesheet', href='libs/animate.css/animate.min.css')
     script(src='https://code.jquery.com/jquery-2.2.3.min.js' type='text/javascript' integrity='sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo=' crossorigin='anonymous')
     script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js' type='text/javascript')
     script(src='libs/angular/angular.min.js' type='text/javascript')
-    script(src='libs/angular-route/angular-route.min.js' type='text/javascript')    
+    //script(src='libs/angular-route/angular-route.min.js' type='text/javascript')    
     script(src='//www.google.com/recaptcha/api.js?render=explicit&onload=vcRecaptchaApiLoaded' type='text/javascript')
     script(src='libs/angular-recaptcha.min.js' type='text/javascript')
-    script(src="javascripts/controllers/MainCtrl.js" type='text/javascript')
-    script(src="javascripts/controllers/NerdCtrl.js" type='text/javascript')
+    script(src="javascripts/controllers/MainCtrl.js" type='text/javascript')  
     script(src="javascripts/controllers/ContactCtrl.js" type='text/javascript')
-    script(src='javascripts/appRoutes.js' type='text/javascript')
+    script(src="javascripts/controllers/TechCtrl.js" type='text/javascript')
+    //script(src='javascripts/appRoutes.js' type='text/javascript')
     script(src='javascripts/app.js' type='text/javascript')
     meta(name='description' content='Nilogen Oncosystems is dedicated to streamlining and improving cancer drug development using its revolutionary 3D ex vivo, ex vivo and in vivo drug testing platforms that use real patient tumor tissue and expertise to best assess the therapeutic potential of drug treatments and immunotherapies. Nilogen reduces the cost and risk of clinical trials with its groundbreaking 3D ex vivo platform.')
     
@@ -53,7 +53,7 @@ html
                            a(href="/tech") TECHNOLOGY
                        li 
                            a(href="/faq") FAQ
-                       li 
+                       //li 
                            a(href="/services") SERVICES                                                              
                        li 
                            a(href="/news") NEWS                     
@@ -79,16 +79,16 @@ html
                                     a(href="/tech" ng-click="menuClicked()") TECHNOLOGY
                                 li                                                           
                                     a(href="/faq" ng-click="menuClicked()") FAQ  
-                                li                                                           
+                                //li                                                           
                                     a(href="/services" ng-click="menuClicked()") SERVICES                                
                                 li 
                                     a(href="/news" ng-click="menuClicked()") NEWS                                                             
                                 li 
                                     a(href="/contact" ng-click="menuClicked()") CONTACT
-                                li
+                                //li
                                     a() 
                                         i(class="fa fa-facebook" aria-hidden="true")
-                                li
+                                //li
                                     a() 
                                         i(class="fa fa-twitter" aria-hidden="true")
     div(ng-view)
@@ -102,18 +102,20 @@ html
                         li 
                             a(href="/" ng-click="menuClicked()") Home
                         li 
-                            a(href="/about" ng-click="menuClicked()") About Us
+                            a(href="/about" ng-click="menuClicked()") About
                         li 
-                            a(href="/team" ng-click="menuClicked()") Team
+                            a(href="/team" ng-click="menuClicked()") Meet the Team
                         li
                             a(href="/tech" ng-click="menuClicked()") Technology
-                        li 
+                        li
+                            a(href="/faq" ng-click="menuClicked()") FAQ
+                        //li 
                             a(href="/services" ng-click="menuClicked()") Services                     
                         li 
                             a(href="/news" ng-click="menuClicked()") News
                         li 
-                            a(href="/contact" ng-click="menuClicked()") Contact Us
-                .col-md-3 
+                            a(href="/contact" ng-click="menuClicked()") Contact
+                //.col-md-3 
                     h2 SOCIAL
                     ul
                         li 
@@ -140,7 +142,7 @@ html
                                 .input-group-addon(ng-click="doSearch()")
                                     i(class="fa fa-search" aria-hidden="true")
                         
-                .col-md-3 
+                .col-md-3(style='display: none')
                     h2 &nbsp;
                     ul
                         li 
@@ -153,7 +155,7 @@ html
                     
                                  
     script(src='https://use.typekit.net/ikz5qnl.js')
-    script(src='/libs/wow.min.js' type='text/javascript')
+    //script(src='/libs/wow.min.js' type='text/javascript')
     script.
         var app = angular.module('loginService', ['vcRecaptcha']);
     script.

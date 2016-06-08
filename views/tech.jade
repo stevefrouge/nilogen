@@ -3,34 +3,44 @@ extends layout
 block content
     .container-fluid(style="padding-left:0px; padding-right: 0px;")
         .imgdiv.techimg
-    .container
+    .container(ng-controller="TechController")
         .row
             .col-md-10.fullpage
                 h1 TECHNOLOGY 
                 <br/>          
-                .text Our patient-derived preclinical and clinical drug testing platforms provide comprehensive analyses of fresh tumor microenvironments and aim to identify the most effective drug combinations, as well as discovery of accompanying predictive biomarkers:
+                .text Our patient-derived preclinical drug testing platforms provide comprehensive analyses of fresh tumor tissue with its intact microenvironment and aim to identify rational drug combinations. Nilogen’s integrated oncology solutions facilitate the discovery of companion diagnostics that can be applied in clinical studies for patient selection and enrichment of clinical trials.
                 
                 .techwrap
                     
-                    .subheader 1. Proprietary 3D ex vivo drug screening systems, 3d-EX 
-                    .subheadertext  Our highly-sensitive, cell-based 3D ex vivo platformplat form, 3d-EX, utilizes fresh tumor tissue from patients to rapidly and accurately test tumor cell sensitivity to immunotherapeutic drugs. By maintaining the intact tumor microenvironment,  Nilogen's platforms allow a more accurate assessmentof the immunomodulatory efficacy of drugs and aid in the development of rational combination treatments in cancer. 
-                    img(src="/images/3D_Ex_Vivo.jpg" class='techimages')
+                    .subheader Proprietary 3D ex vivo drug screening systems, 3d-EX 
+                    .subheadertext  Nilogen’s proprietary, patient-derived 3D-EX platform rapidly and accurately analyzes the tumor response to oncology and immuno-oncology drugs. Through the correlation of the ex vivo tumor drug response with the characteristics of the tumor microenvironment, Nilogen aims to identify and validate biomarkers of drug sensitivity and resistance.
+                    img(src="/images/3D_Ex_Vivo.jpg" class='techimages' ng-click="imgClicked('/images/3D_Ex_Vivo.jpg')")
                     <br/>
                     
-                    .subheader 2.  Invitro-Match
-                    .subheadertext At Nilogen, we process fresh tumor tissue obtained from cancer patients, to isolate and propagate the different cellular components of the 3D turmor microenvironment.  These different cell types include, but are not limited to, tumor cells, cancer-associated fibroblasts, tumor-infiltrating lymphocytes and dendritic cells.  Analyzing the interaction of these cellular components is essential to learning more about how drugs affect the entire tumor microenvironment and not just tumor cells.  This system allows Nilogen to mix and match all components with different drug treatment combinations to determine the net balance effect of drugs on the entire tumor microenvironment. 
-                    img(src="/images/In-Vitro.jpg" class='techimages')
+                    .subheader Invitro-Match
+                    .subheadertext The Invitro-Match platform assesses the effect of drugs and drug combinations on the individual components of the tumor microenvironment that were isolated and propagated from each patient’s tumor.
+                    img(src="/images/In-Vitro.jpg" class='techimages' ng-click="imgClicked('/images/In-Vitro.jpg')")
                     <br/>
                     
-                    .subheader 3.  Immuno-PDX
-                    .subheadertext By utlizing a patient's fresh tumor and matching lymphoid cells, we create a PDX mouse model in which we recapitulate the tumor immune-microenvironment suitable for in vivo drug testing, as well as for the development and application of genetically engineered T-cells for immune-oncology applications. 
-                    img(src="/images/In-Vivo.jpg" class='techimages')
+                    .subheader Immuno-PDX
+                    .subheadertext In its Immuno-PDX models Nilogen utilizes matching fresh patient tumor tissue and propagated lymphocytes to recapitulate the tumor immune-microenvironment. These models are uniquely suited for in vivo drug testing as well as for the development and application of genetically engineered T-cells in immuno-oncology.
+                    img(src="/images/In-Vivo.jpg" class='techimages' ng-click="imgClicked('/images/In-Vivo.jpg')")
                 
                 .text Using these platforms, we offer pharmaceutical and biotechnology companies innovative cancer immunotherapy and anti-cancer drug testing programs and biomarker discovery services designed to:
                 <br/>
                 .check.lightblue / Optimize cancer treatment success
                 .check.lightblue / Reduce the cost of clinical trials
                 .check.lightblue / Lower the risk of trial failure 
-                
+     #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+        .modal-dialog(role='document' style='width: 95%;')
+            .modal-content
+                .modal-header
+                    button.close(type='button', data-dismiss='modal', aria-label='Close')
+                        span(aria-hidden='true') ×
+                    //h4#myModalLabel.modal-title Confirm
+                .modal-body
+                    img(id='maxtechimg' class='maxwidth')
+                .modal-footer
+                    button.btn.btn-default(type='button', data-dismiss='modal') Close                 
             
             
