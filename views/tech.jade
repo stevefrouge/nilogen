@@ -6,31 +6,36 @@ block content
     .container(ng-controller="TechController")
         .row
             .col-md-10.fullpage
-                h1 TECHNOLOGY 
+                h1 TECHNOLOGY & SERVICES
                 <br/>          
-                .text Our patient-derived preclinical drug testing platforms provide comprehensive analyses of fresh tumor tissue with its intact microenvironment and aim to identify rational drug combinations. Nilogen’s integrated oncology solutions facilitate the discovery of companion diagnostics that can be applied in clinical studies for patient selection and enrichment of clinical trials.
+                .text Our patient-derived preclinical drug testing platforms provide comprehensive analyses of fresh tumor tissue with its intact microenvironment and aim to identify rational drug combinations. Nilogen’s integrated oncology solutions facilitate the discovery of companion diagnostics that can be applied in clinical studies for patient selection and enrichment of clinical trials. 
                 
                 .techwrap
                     
-                    .subheader Proprietary 3D ex vivo drug screening systems, 3d-EX 
-                    .subheadertext  Nilogen’s proprietary, patient-derived 3D-EX platform rapidly and accurately analyzes the tumor response to oncology and immuno-oncology drugs. Through the correlation of the ex vivo tumor drug response with the characteristics of the tumor microenvironment, Nilogen aims to identify and validate biomarkers of drug sensitivity and resistance.
+                    .subheader 3D <i>ex vivo</i> drug screening systems, 3D-EX  
+                    .subheadertext  Nilogen’s proprietary, patient-derived 3D-EX platform rapidly and accurately analyzes the tumor response to oncology and immuno-oncology drugs. Through the correlation of the ex vivo tumor drug response with the characteristics of the tumor microenvironment, Nilogen aims to identify and validate biomarkers of drug sensitivity and resistance. 
                     img(src="/images/3D_Ex_Vivo.jpg" class='techimages' ng-click="imgClicked('/images/3D_Ex_Vivo.jpg')")
                     <br/>
                     
-                    .subheader Invitro-Match
-                    .subheadertext The Invitro-Match platform assesses the effect of drugs and drug combinations on the individual components of the tumor microenvironment that were isolated and propagated from each patient’s tumor.
-                    img(src="/images/In-Vitro.jpg" class='techimages' ng-click="imgClicked('/images/In-Vitro.jpg')")
+                    .subheader Cell-Match
+                    .subheadertext The Cell-Match platform assesses the effect of drugs and drug combinations on the individual components of the tumor microenvironment that were isolated and propagated from each patient’s tumor.
+                    img(src="/images/Cell_Match.jpg" class='techimages' ng-click="imgClicked('/images/In-Vitro.jpg')")
                     <br/>
                     
                     .subheader Immuno-PDX
                     .subheadertext In its Immuno-PDX models Nilogen utilizes matching fresh patient tumor tissue and propagated lymphocytes to recapitulate the tumor immune-microenvironment. These models are uniquely suited for in vivo drug testing as well as for the development and application of genetically engineered T-cells in immuno-oncology.
-                    img(src="/images/In-Vivo.jpg" class='techimages' ng-click="imgClicked('/images/In-Vivo.jpg')")
+                    img(src="/images/Immuno_PDX.jpg" class='techimages' ng-click="imgClicked('/images/In-Vivo.jpg')")
                 
-                .text Using these platforms, we offer pharmaceutical and biotechnology companies innovative cancer immunotherapy and anti-cancer drug testing programs and biomarker discovery services designed to:
+                .text Please see our presentations listed in the 
+                    a(href='/news') News 
+                    |section.
                 <br/>
-                .check.lightblue / Optimize cancer treatment success
-                .check.lightblue / Reduce the cost of clinical trials
-                .check.lightblue / Lower the risk of trial failure 
+
+                //.text Using these platforms, we offer pharmaceutical and biotechnology companies innovative cancer immunotherapy and anti-cancer drug testing programs and biomarker discovery services designed to:
+                //<br/>
+                //.check.lightblue / Optimize cancer treatment success
+                //.check.lightblue / Reduce the cost of clinical trials
+                //.check.lightblue / Lower the risk of trial failure 
      #myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
         .modal-dialog(role='document' style='width: 95%;')
             .modal-content
