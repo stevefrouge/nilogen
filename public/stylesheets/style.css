@@ -21,6 +21,19 @@ body {
     padding-top: 150px;
     /*display: none;*/
 }
+
+#olAnswers a{
+    color: #005088;
+}
+#olAnswers li{
+     margin-bottom: 20px;
+}
+#olQuestions li{
+     margin-bottom: 8px;
+ }
+ #olQuestions li a{
+     margin-left: 5px;
+ }
 article{
     margin-bottom: 30px;
 }

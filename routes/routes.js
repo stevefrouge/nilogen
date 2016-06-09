@@ -31,6 +31,9 @@ app.get('/team', function(req, res, next) {
 app.get('/faq', function(req, res, next) {
   res.render(path + 'faq', { title: "FAQ" });
 });
+app.get('/legal', function(req, res, next) {
+  res.render(path + 'legal', { title: "Legal" });
+});
 app.post('/contact',function(req, res, next){
     var x = contact;
     contact.recievecontactform(req,res);
