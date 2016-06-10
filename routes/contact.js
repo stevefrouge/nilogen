@@ -25,7 +25,7 @@ function sendEmail(body, res){
     
      var mailOptions = {
                 from: 'nilogensite@outlook.com', // sender address
-                to: 'sjf6598@gmail.com', // list of receivers
+                to: 'info@nilogen.com', // list of receivers
                 subject: 'Nilogen Contact Form', // Subject line
                 text: body, // plaintext body
                 html: body // html body
