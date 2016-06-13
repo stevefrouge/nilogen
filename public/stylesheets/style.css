@@ -309,6 +309,20 @@ h2{
     
     background-position: 0px -100px;
 }
+.col{
+    width: 45%;
+   
+}
+.homenew{
+    padding-left:5%;
+    padding-right:5%;
+}
+#imgText{
+    height:450px;   
+}
+#imgBall{
+    height:450px;
+}
 .imgdiv{
     height: 450px;
      
@@ -407,6 +421,17 @@ h2{
         .imgdiv{
             height: 200px;
         }
+        #imgText{
+            width: 315px;
+            height: 260px;
+        }
+        #imgBall{
+           height: 250px;
+        }
+         .homenew{
+             padding-left:0%;
+             padding-right:0%;
+        }
     }
 
     /* Small Devices, Tablets */
@@ -415,6 +440,17 @@ h2{
         .ulmenu li a {
             font-size: 18px;
             
+        }
+        .homenew{
+             padding-left:0%;
+             padding-right:0%;
+        }
+        #imgText{
+            width: 315px;
+            height: 260px;
+        }
+        #imgBall{
+           height: 250px;
         }
         .imgdiv {
             height: 200px;
