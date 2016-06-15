@@ -43,6 +43,9 @@ article{
     margin-right: auto;
     
 }
+.divLogoMobile{
+            display: none;
+}
 @media (min-width: 1200px){
 .container{
     width: 1300px;
@@ -196,8 +199,8 @@ h2{
     
     background-color: #002751;
     color: White;
-    padding-top: 40px;
-    padding-bottom: 30px;
+    padding-top: 0px;
+    padding-bottom: 10px;
     margin-top: 40px;
 }
 .footer ul{
@@ -242,8 +245,8 @@ h2{
  .copyright{
     border-top: 1px solid white;
     text-align: center;
-    margin-top: 40px;
-    padding-top: 40px;
+    margin-top: 15px;
+    padding-top: 15px;
  }
  #mobilebutton{
      font-size: 32px;
@@ -317,6 +320,11 @@ h2{
     padding-left:5%;
     padding-right:5%;
 }
+#imgAbout{
+       width: 75%;
+    padding-top: 20%;
+    margin-left: 20%;
+}
 #imgText{
     height:450px;   
 }
@@ -371,7 +379,10 @@ h2{
     display: none;
     float: right;
     padding-top: 10px;
-  
+    position: absolute;
+    top: 0px;
+    /* right: 80%; */
+    left: 88%;
  }
  .mobileMenu a{
      font-size: 38px;
@@ -425,6 +436,7 @@ h2{
             width: 315px;
             height: 260px;
         }
+      
         #imgBall{
            height: 250px;
         }
@@ -449,6 +461,10 @@ h2{
             width: 315px;
             height: 260px;
         }
+         #aboutText{
+           width: 315px;
+           height: 260px;
+        }
         #imgBall{
            height: 250px;
         }
@@ -471,6 +487,12 @@ h2{
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
+        .divLogoMobile{
+            display: inline;
+        }
+        .divLogo{
+            display: none;
+        }
         /*body{background-color: yellow;}*/
           h1{
             font-size: 42px;
@@ -493,6 +515,9 @@ h2{
            width: 200px;
            
        }
+       .logomobileimg{
+           width: 100%;
+       }
        .imgdiv{
             display: none;
        }
@@ -506,6 +531,7 @@ h2{
          .divLogo{
             float: left;
         }
+        
         .menurow{
             padding-bottom: 0px;
         }
@@ -523,7 +549,12 @@ h2{
     /* Custom, iPhone Retina */ 
     @media only screen and (max-width : 320px) {
        /*body{background-color: blue;}*/
-       
+       .divLogoMobile{
+            display: inline;
+        }
+        .divLogo{
+            display: none;
+        }
        .ulmenu{position: relative;}
        .imgdiv{background-position: 0px 0px;}
        .menuline{display: none;}

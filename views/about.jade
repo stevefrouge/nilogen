@@ -3,7 +3,10 @@ extends layout
 block content
     .container-fluid(style="padding-left:0px; padding-right: 0px;")
         .imgdiv.aboutimg
-            img(src="/images/About-Text.png" class='homelayover')
+             .homewrap
+                    .col(style="float: left;")
+                        img(id="imgAbout" src="/images/About-Text2.png")
+            //img(src="/images/About-Text.png" class='homelayover')
     .container
         .row
             .col-md-10.fullpage

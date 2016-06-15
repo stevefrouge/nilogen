@@ -31,15 +31,18 @@ html
             .headerimages               
               img(src='/images/Lines-1.png' class='line')
               img(src='/images/Lines-2.png' class='line')
-               
+              .mobileMenu
+                        a(href="" ng-click="doMenu()")
+                           i(id="mobilebutton" class="fa fa-bars" aria-hiiden="true") 
         .row.menurow
             .col-md-3 
                 .divLogo
                     a(href="/")
                         img(src='/images/logo300.png' class='logoimg')
-                .mobileMenu
-                        a(href="" ng-click="doMenu()")
-                           i(id="mobilebutton" class="fa fa-bars" aria-hiiden="true")
+                 .divLogoMobile
+                    a(href="/")
+                        img(src='/images/logomobile.png' class='logomobileimg')
+               
                       
                         
             .col-md-8
